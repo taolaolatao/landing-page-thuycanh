@@ -60,6 +60,13 @@ body {
   width: 180px;
 }
 
+.heading-footer {
+  margin-bottom: 20px;
+  border-left: 5px solid green;
+  padding-left: 1rem;
+  color: green;
+}
+
 /* .heading-border::after {
   content: "🥦";
   left: 0;
@@ -92,10 +99,8 @@ body {
   background-image: url("./images/header-bg.jpg");
   background-size: cover;
   background-position: top;
-  margin-top: 120px;
   clip-path: ellipse(77% 51% at 50% 38%);
   opacity: 0.8;
-  margin-bottom: -50px;
 }
 
 .logo-box {
@@ -287,11 +292,17 @@ body {
   display: inline-block;
   padding: 10px;
   border: 2px solid green;
+  border-radius: 50%;
   margin-right: 5px;
 }
 
 .footer i {
   font-size: 20px;
+}
+
+#our-product .product img {
+  height: 250px;
+  object-fit: cover;
 }
 
 #scroll-to-top {
@@ -302,15 +313,16 @@ body {
   background-color: #718093;
   text-align: center;
   opacity: 0;
+  bottom: -100px;
   transition: 500ms all;
   z-index: 10000000000000;
-  bottom: 20px;
   left: 20px;
   cursor: pointer;
 }
 
 #scroll-to-top.show {
   opacity: 100%;
+  bottom: 20px;
 }
 
 #scroll-to-top:hover {
@@ -321,4 +333,18 @@ body {
   font-size: 50px;
   color: white;
   margin-top: 15px;
+}
+
+.popInTop,
+.popInBottom {
+  position: relative !important;
+}
+
+[data-scroll] {
+  transition: 2s all;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: rotateX(0);
 }
