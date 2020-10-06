@@ -30,39 +30,10 @@ const products = [
     img: "./images/products/5.jpg",
   },
   {
-    title: "Card Title",
-    content: "Some quick example text to build on the card title and make up",
+    title: "Cải Dún",
+    content:
+      "Cải bẹ dún có chứa nhiều thành phần dinh dưỡng có lợi cho sức khỏe như vitamin C và nhiều nguyên tố vi lượng, có tác dụng làm mát gan, thanh lọc, giải nhiệt. Nhờ chứa lượng chất xơ, khoáng chất như phosphor, kali, canxi, sắt… các vitamin A, B, C, E rất tốt cho quá trình chống oxy hóa và duy trì sự trẻ trung cho làn da phụ nữ, ngăn ngừa giảm trí nhớ.",
     img: "./images/products/6.jpg",
-  },
-  {
-    title: "Card Title",
-    content: "Some quick example text to build on the card title and make up",
-    img: "./images/products/7.jpg",
-  },
-  {
-    title: "Card Title",
-    content: "Some quick example text to build on the card title and make up",
-    img: "./images/products/8.jpg",
-  },
-  {
-    title: "Card Title",
-    content: "Some quick example text to build on the card title and make up",
-    img: "./images/products/9.jpg",
-  },
-  {
-    title: "Card Title",
-    content: "Some quick example text to build on the card title and make up",
-    img: "./images/products/10.jpg",
-  },
-  {
-    title: "Card Title",
-    content: "Some quick example text to build on the card title and make up",
-    img: "./images/products/11.jpg",
-  },
-  {
-    title: "Card Title",
-    content: "Some quick example text to build on the card title and make up",
-    img: "./images/products/12.jpg",
   },
 ];
 
@@ -73,10 +44,21 @@ function loadProducts(products, start = 0, end = 0) {
     ourProduct += `
       <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-4">
         <div class="card product" style="width: 18rem">
-          <img src="${product.img}" class="card-img-top" alt="${product.title}" loading="lazy" />
+          <img src="${product.img}" class="card-img-top" alt="${
+      product.title
+    }" loading="lazy" />
           <div class="card-body">
             <h5 class="card-title">${product.title}</h5>
-            <p class="card-text">${product.content}</p>
+            <p class="card-text">${
+              product.content.length > 200
+                ? product.content.substr(0, 200) + "..."
+                : product.content
+            }</p>
+            <a class="spotlight btn btn-outline-success" href="${
+              product.img
+            }" data-description="${product.content}">
+              Đọc thêm
+            </a>
           </div>
         </div>
       </div>`;

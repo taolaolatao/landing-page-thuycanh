@@ -20,7 +20,6 @@
     </title>
 
     <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
-
     <!-- CSS only -->
     <link
       rel="stylesheet"
@@ -30,6 +29,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./css/spotlight.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -85,7 +85,7 @@
             class="btn btn-outline-success btn-custom my-2 my-sm-0"
             type="submit"
           >
-            Tìm kiếm
+            <i class="fas fa-search"></i>
           </button>
         </form>
       </div>
@@ -116,11 +116,11 @@
             </p>
             <p>
               <i class="fa fa-location-arrow"></i>
-              Địa chỉ: Số 97A, đường TX33, Phường Thạnh Xuân, Quận 12
+              Địa chỉ: Đường Nguyễn Văn Sâm, P. Tam Hiệp, Biên Hoà
             </p>
             <p>
               <i class="fa fa-phone"></i>
-              Hotline: 0251383682736
+              Hotline: 02513682736
             </p>
             <p>
               <i class="fa fa-envelope-open"></i>
@@ -163,12 +163,13 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/spotlight.min.js"></script>
     <script src="./js/loadProducts.js"></script>
     <script>
       const containProducts = document.getElementById("our-product");
-      containProducts.innerHTML = loadProducts(products);
-
       const scrollToTop = document.getElementById("scroll-to-top");
+
+      containProducts.innerHTML = loadProducts(products);
 
       scrollToTop.addEventListener("click", function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
