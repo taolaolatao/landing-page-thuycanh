@@ -31,6 +31,10 @@
     />
     <link rel="stylesheet" href="./css/spotlight.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #our-product {
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -98,9 +102,19 @@
       <hr class="heading-border heading-product" />
 
       <div class="container">
+        <div class="row mt-5">
+          <h2 class="heading-2 heading-outside">Thuỷ canh ngoài trời</h2>
+        </div>
         <div
-          class="row mt-3 d-flex justify-content-center"
-          id="our-product"
+          class="row mt-3 d-flex justify-content-left"
+          id="product-outside"
+        ></div>
+        <div class="row mt-5">
+          <h2 class="heading-2 heading-inhome">Thuỷ canh trong nhà</h2>
+        </div>
+        <div
+          class="row mt-3 d-flex justify-content-left"
+          id="product-inhome"
         ></div>
       </div>
     </section>
@@ -109,14 +123,14 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-6">
-            <h4 class="heading-footer">Công ty TNHH Hoà Anh Phát</h4>
+            <h4 class="heading-footer">Công ty TNHH Hoà Oanh Phát</h4>
             <p>
               Dịch vụ tư vấn thiết kế và thi công công trình thủy canh, nhà
               màng, nhà kính, nhà lưới. Các dòng thiết bị, vật tư thủy canh
             </p>
             <p>
               <i class="fa fa-location-arrow"></i>
-              Địa chỉ: Đường Nguyễn Văn Sâm, P. Tam Hiệp, Biên Hoà
+              Địa chỉ: Đường Lý Văn Sâm, P. Tam Hiệp, Biên Hoà
             </p>
             <p>
               <i class="fa fa-phone"></i>
@@ -166,10 +180,15 @@
     <script src="./js/spotlight.min.js"></script>
     <script src="./js/loadProducts.js"></script>
     <script>
-      const containProducts = document.getElementById("our-product");
-      const scrollToTop = document.getElementById("scroll-to-top");
+      const productOutSide = document.getElementById("product-outside"),
+        productInHome = document.getElementById("product-inhome"),
+        scrollToTop = document.getElementById("scroll-to-top");
 
-      containProducts.innerHTML = loadProducts(products);
+      const outSideProducts = products.filter((p) => p.type === "outside");
+      const inHomeProducts = products.filter((p) => p.type === "inhome");
+
+      productOutSide.innerHTML = loadProducts(outSideProducts, "all");
+      productInHome.innerHTML = loadProducts(inHomeProducts, "all");
 
       scrollToTop.addEventListener("click", function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");

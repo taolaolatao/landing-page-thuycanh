@@ -1,63 +1,79 @@
 const products = [
   {
-    title: "Cải Ngọt",
+    title: "Giàn thuỷ canh chữ A",
     content:
-      "Trong thành phần cải ngọt có chứa hàm lượng chất xơ lớn, cùng với các vitamin K, lipit,...bổ sung cho cơ thể dưỡng chất bảo vệ hệ tiêu hóa, nhất là ngăn ngừa táo bón tốt. Đồng thời chống các bệnh về tim mạch. Hỗ trợ chống loãng xương, giúp xương chắc khỏe. Giúp cơ thể ngăn ngừa các loại ung thư, hiệu quả nhất là ung thư phổi và ung thư tá tràng. Phòng và chữa bệnh gout, trĩ, xơ gan. Tăng sức đề kháng, giải nhiệt cơ thể.",
+      "Giàn thủy canh chữ A với thiết kế kiểu lắp ghép đơn giản. Chỉ cần bỏ ra 30 phút là bạn sẽ có ngay một giàn rau thủy canh sạch tại nhà dành cho gia đình. Giàn thiết kế 4 tầng, 8 ống, chiều dài 2 mét, 3 mét, 4 mét… tùy theo không gian mà quý khách có thể sử dụng mẫu giàn phù hợp. Kiểu giàn trồng chữ A được thiết kế 4 tầng cân đối, linh hoạt, khoảng cách các cây trồng khoa học, không bị che khuất nhau. Như vậy, dù ánh nắng chiếu xiên hay thẳng đứng thì rau trồng đều nhận được đầy đủ ánh nắng cho quá trình quang hợp, giúp cây sinh trưởng phát triển tốt hơn.",
     img: "./images/products/1.jpg",
+    thumb: "./images/products/thumb/1.jpg",
+    type: "outside",
   },
   {
-    title: "Cải Bẹ Xanh (Cải Cay)",
+    title: "Giàn thuỷ canh trải ngang",
     content:
-      "Cải Bẹ Xanh là bài thuốc thân thiện để chữa các chứng: viêm họng, ho hen, mụn nhọt, trĩ, các chứng phong hàn,  giảm đau họng, điều trị bệnh gout, giúp thải ra ngoài chất axit uric, phòng trừ bệnh rất hiệu quả. Ngoài ra, cải bẹ còn chứa hàm lượng vitamin khá cao, cung cấp nhiều axit folic cần thiết cho tế bào máu. Mỗi ngày dùng 200 – 300g rau cải bẹ trong khẩu phần ăn có thể duy trì được sự tươi trẻ cho làn da.",
+      "Mô hình trồng rau thủy canh kiểu trải ngang đón nắng tối đa giúp cho cây trồng có nhiều ánh sáng để quang hợp làm cho cây trồng phất triển tốt nhất so với các mô hình trồng rau thủy canh khác. Giàn thủy canh này không phân tầng nên toàn bộ rau đều đón được ánh nắng mặt trời giúp cây rau quang hợp tốt nhất và cho năng suất tốt nhất.",
     img: "./images/products/2.jpg",
+    thumb: "./images/products/thumb/2.jpg",
+    type: "outside",
   },
   {
-    title: "Cải Thìa",
+    title: "Giàn thuỷ canh trong nhà (trắng)",
     content:
-      "Cải thìa tốt cho phụ nữ mang thai, có tác dụng phòng ngừa khuyết tật cho thai nhi, giúp xương chắc khỏe, có khả năng kích thích nhịp tim hoạt động tốt và hạ huyết áp. Làm chậm quá trình lão hóa và giảm đáng kể việc hình thành các gốc tự do, phòng ngừa bệnh đục nhân mắt và thoái hóa hoàng điểm ở mắt. Trị các bệnh như lợi tiểu, giảm sưng phù, có tác dụng ngăn ngừa ung thư. Hạt cải dùng làm thuốc trị tiêu đờm, thông kinh mạch, kháng viêm, ho.",
-    img: "./images/products/3.jpg",
+      "Mô hình thuỷ canh dạng tủ được đặt trong nhà với hệ thống đèn led để canh tác. Nhờ có ánh sáng 24/24h mà năng suất của trang trại thủy canh đèn led vô cùng vượt trội. Thiết kế nhỏ gọn, đẹp hơn, không chỉ ứng dụng trồng cây mà còn làm đẹp khu vườn thủy canh của bạn. Ở mỗi giai đoạn nhất định, cây thủy canh cần những màu ánh sáng khác nhau để phát triển. Nếu dùng đèn natri hoặc đèn huỳnh quang thông thường bạn chỉ dùng được ở một giai đoạn nhất định. Đèn led trồng rau thủy canh có thể có cả chùm màu nhờ đầu lọc để cung cấp quang phổ chính xác cho từng cây trồng và từng giai đoạn của mỗi cây.",
+    img: "./images/products/8.jpg",
+    thumb: "./images/products/thumb/3.jpg",
+    type: "inhome",
   },
   {
-    title: "Cải Ngồng",
+    title: "Giàn thuỷ canh 1/2 chữ A",
     content:
-      "Cải ngồng rất giàu chất xơ và chứa nhiều loại vitamin A, B1, B2, B3, B5, B6, C, K... bổ sung dưỡng chất cho da, góp phần giúp cho đôi mắt của bạn thêm sáng và khỏe mạnh. Cải ngồng cũng chứa nhiều chất nhầy và chất xơ giúp gia tăng nhu động ruột, kích thích hệ bài tiết và hỗ trợ gan hoạt động mạnh mẽ hơn. Đặc biệt là cải ngồng sẽ kéo dài tuổi thọ và giảm nguy cơ bệnh tim, kích thích tuần hoàn lưu thông máu và ổn định huyết áp, cho bạn một trái tim khỏe mạnh.",
+      "Giàn trồng rau thủy canh 1/2 chữ A với kích thước tương đối, được thiết kế nhỏ gọn nên kiểu giàn này phù hợp với nhiều không gian như: sân vườn nhỏ trước nhà, hay ban công, sân thượng. Giàn trồng được xây dựng theo kiểu chữ 1/2 A với từng tầng cây, ống thủy canh sắp xếp theo hình bậc thang. Như vậy, dù ánh nắng chiếu xiên hay thẳng đứng thì rau trồng đều nhận được đầy đủ ánh nắng cho quá trình quang hợp.",
     img: "./images/products/4.jpg",
+    thumb: "./images/products/thumb/4.jpg",
+    type: "outside",
   },
   {
-    title: "Xà Lách",
+    title: "Giàn thuỷ canh trong nhà (đen)",
     content:
-      "Rau xà lách giúp thanh nhiệt, điều trị một số bệnh như táo báo và có tác dụng ngăn ngừa ung thư, viêm khớp, tim mạch… Rau xà lách có thể đáp ứng được một lượng dưỡng chất cần thiết cho cơ thể trong hoạt động hằng ngày như vitamin và khoáng chất. Có khả năng chống oxy hóa mạnh mẽ, giúp xương chắc khỏe và tốt cho răng miệng, hỗ trợ sự hoạt động của hệ thần kinh và quá trình tái tạo máu, bảo vệ sức khỏe của đôi mắt. Phụ nữ mang thai ăn rau xà lách để cả hai mẹ con cùng được khỏe mạnh.",
-    img: "./images/products/5.jpg",
+      "Mô hình thuỷ canh dạng tủ được đặt trong nhà với hệ thống đèn led để canh tác. Nhờ có ánh sáng 24/24h mà năng suất của trang trại thủy canh đèn led vô cùng vượt trội. Thiết kế nhỏ gọn, đẹp hơn, không chỉ ứng dụng trồng cây mà còn làm đẹp khu vườn thủy canh của bạn. Ở mỗi giai đoạn nhất định, cây thủy canh cần những màu ánh sáng khác nhau để phát triển. Nếu dùng đèn natri hoặc đèn huỳnh quang thông thường bạn chỉ dùng được ở một giai đoạn nhất định. Đèn led trồng rau thủy canh có thể có cả chùm màu nhờ đầu lọc để cung cấp quang phổ chính xác cho từng cây trồng và từng giai đoạn của mỗi cây.",
+    img: "./images/products/9.jpg",
+    thumb: "./images/products/thumb/5.jpg",
+    type: "inhome",
   },
   {
-    title: "Cải Dún",
-    content:
-      "Cải bẹ dún có chứa nhiều thành phần dinh dưỡng có lợi cho sức khỏe như vitamin C và nhiều nguyên tố vi lượng, có tác dụng làm mát gan, thanh lọc, giải nhiệt. Nhờ chứa lượng chất xơ, khoáng chất như phosphor, kali, canxi, sắt… các vitamin A, B, C, E rất tốt cho quá trình chống oxy hóa và duy trì sự trẻ trung cho làn da phụ nữ, ngăn ngừa giảm trí nhớ.",
+    title: "Giàn thuỷ canh dạng đứng",
+    content: "Mô hình thuỷ canh dạng đứng (ngoài trời)",
     img: "./images/products/6.jpg",
+    thumb: "./images/products/thumb/6.jpg",
+    type: "outside",
   },
 ];
 
-function loadProducts(products, start = 0, end = 0) {
+function loadProducts(products, type = "all", start = 0, end = 0) {
   let ourProduct = "";
   const arr = end > 0 ? products.slice(start, end) : products;
   for (const product of arr) {
+    let content = "";
+    if (type === "featured") {
+      content = `<h5 class="card-title">${product.title}</h5>
+                  <p class="card-text">${
+                    product.content.length > 200
+                      ? product.content.substr(0, 200) + "..."
+                      : product.content
+                  }</p>`;
+    } else {
+      content = `<h5 class="card-title card-title-custom">${product.title}</h5>`;
+    }
+
     ourProduct += `
       <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-4">
         <div class="card product" style="width: 18rem">
-          <img src="${product.img}" class="card-img-top" alt="${
-      product.title
-    }" loading="lazy" />
+          <img src="${product.thumb}" class="card-img-top" alt="${product.title}" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title">${product.title}</h5>
-            <p class="card-text">${
-              product.content.length > 200
-                ? product.content.substr(0, 200) + "..."
-                : product.content
-            }</p>
-            <a class="spotlight btn btn-outline-success" href="${
-              product.img
-            }" data-description="${product.content}">
-              Đọc thêm
+            ${content}
+            <a class="spotlight btn btn-outline-success"
+              href="${product.img}" 
+              data-description="${product.content}">
+              Chi tiết
             </a>
           </div>
         </div>
