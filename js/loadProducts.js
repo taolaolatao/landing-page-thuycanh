@@ -61,7 +61,7 @@ function loadProducts(products, type = "all", start = 0, end = 0) {
                       : product.content
                   }</p>`;
     } else {
-      content = `<h5 class="card-title card-title-custom">${product.title}</h5>`;
+      // content = `<h5 class="card-title card-title-custom">${product.title}</h5>`;
     }
 
     ourProduct += `
